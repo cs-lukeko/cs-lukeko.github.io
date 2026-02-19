@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Projects - Luke Heath-Edwards</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 
   <header>
@@ -20,18 +22,90 @@
   <main>
     <h1>My Projects</h1>
 
-    <div class="project">
-      <h2>University Blogging App</h2>
-      <p>A group project that enabled the user to upload, edit, and delete blog posts with a WYSIWYG editor. Full-stack development ensured that user interaction communicated with the server and database.</p>
-      <p><strong>Skills:</strong> HTML, CSS, Javascript, Svelte, Node.js & Express, Postman, RESTful APIs, SQL, Databases</p>
-    </div>
+    <div class="projects-grid">
+      <div class="project">
+        <img class="project-img" src="/assets/images/FoodBlog1.png">
+        <div class="project-content">
+          <h2>Food Blogging Website</h2>
+          <p>A full-stack food blogging platform built as a university group project with a team of five. Users can
+            browse
+            articles on the homepage, register an account, and log in to create, edit, and delete their own blog posts
+            using a rich WYSIWYG text editor with image upload support. The app includes a search feature, a likes
+            system
+            with animations, real-time username validation during registration, and an auto-saving profile editor. Built
+            with SvelteKit on the frontend, Node.js and Express on the backend, and SQLite as the database,
+            communicating
+            via a RESTful API with JWT-based authentication.</p>
+          <p><strong>Skills: </strong>HTML, CSS, JavaScript, SvelteKit, Node.js, Express, SQLite, RESTful APIs, JWT
+            Authentication, Postman</p>
+          <a href="https://github.com/cs-lukeko/food-blogging-website">GitHub repo →</a>
+        </div>
+      </div>
 
-    <div class="project">
-      <h2>Bulls and Cows Game</h2>
-      <p>Player vs. Computer code-cracking game.</p>
-      <p><strong>Skills:</strong> Java, OOP, arrays, lists, loops, inheritance, exceptions, IO</p>
+      <div class="project">
+        <img class="project-img" src="/assets/images/PokeBattle2.png">
+        <div class="project-content">
+          <h2>Pokemon Battle Simulator</h2>
+          <p>A Pokémon battle simulator built with SvelteKit as a university frontend assignment. Two random Pokémon are
+            selected from a full 151-entry Pokédex and face off in turn-based combat, with each attack dealing random
+            damage between 10–20 HP, with a 10% chance of a critical hit dealing 40 damage. The app is decomposed into
+            six
+            Svelte components covering the header, Pokémon cards, HP bar, attack button, music player, and reset button.
+            Battle animations include a smooth HP bar transition, floating damage indicators, a flashing HP bar when
+            below
+            20%, and a crown/defeat overlay on the winner and loser. The design is inspired by the original Game Boy
+            Pokémon games, featuring an 8-bit font, pixel art background, and toggleable 8-bit battle music. The app is
+            fully responsive, displaying side-by-side on desktop and stacked on mobile.</p>
+          <p><strong>Skills:</strong> JavaScript, SvelteKit, Svelte Stores, CSS Animations & Keyframes, CSS Transitions,
+            Responsive Design, Component Architecture, Custom Events</p>
+          <a href="https://github.com/cs-lukeko/pokemon-battle-simulator">GitHub repo →</a>
+        </div>
+      </div>
+
+
+      <div class="project">
+        <img class="project-img" src="/assets/images/Bulls1.png">
+        <div class="project-content">
+          <h2>Bulls and Cows Game</h2>
+          <p>A Java console-based implementation of the classic Bulls & Cows code-breaking game, built across two
+            assignment increments. Players can choose between Single Player mode (guessing a computer-generated code) or
+            Player vs. Computer mode (both players guess each other's codes simultaneously). The computer opponent
+            features three AI difficulty levels: Easy (random guessing), Medium (avoids repeating previous guesses), and
+            Hard (uses a process-of-elimination strategy that intelligently prunes a list of all possible codes after
+            each
+            guess). The game also supports six-digit hexadecimal codes loaded from an external file, result saving to a
+            .txt file, input validation throughout, and a randomised player order at the start of each match. A JUnit
+            test
+            suite covers the core code validation and hexadecimal computer logic.</p>
+          <p><strong>Skills:</strong> Java, Object-Oriented Programming, Inheritance & Polymorphism, AI Strategy & Game
+            Logic, File I/O, Exception Handling, JUnit Testing</p>
+          <a href="https://github.com/cs-lukeko/bulls-and-cows-game">GitHub repo →</a>
+        </div>
+      </div>
+
+
+      <div class="project">
+        <img class="project-img" src="/assets/images/ColourSwap2.png">
+        <div class="project-content">
+          <h2>Colour Swap</h2>
+          <p>A Java arcade game developed as a university final project, built using Java Swing for the UI. The player
+            controls a circle that can switch between red and blue using the spacebar, moving around the screen with
+            arrow
+            keys to collect matching-coloured shapes while avoiding opposite-coloured ones. The game features multiple
+            shape types, a robot player mode, a title screen, how-to-play screen, and game over screen with score
+            display.
+            The project was built incrementally and follows a strict MVC (Model-View-Controller) architecture, with
+            collision detection, a shape spawning system, and a listener pattern for game state updates. A full JUnit
+            test
+            suite covers all core shape and player behaviours.</p>
+          <p><strong>Skills:</strong> Java, Object-Oriented Programming, MVC Architecture, Java Swing, Inheritance &
+            Polymorphism, Design Patterns, JUnit Testing, Test-Driven Development</p>
+          <a href="https://github.com/cs-lukeko/colour-swap">GitHub repo →</a>
+        </div>
+      </div>
     </div>
   </main>
 
 </body>
+
 </html>
